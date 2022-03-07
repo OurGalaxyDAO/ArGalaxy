@@ -1,0 +1,2 @@
+# ArGalaxy
+We have enough discussions on why NFTs stored in IPFS are unsafe, but Arweave could tackle them with: 1) Permanence; 2) Decentralized unlike most "centralized" IPFS pinning services; and 3) No Recurring Fees. But the current situation is, the majority of popular NFT collections are still using IPFS for their storage. Why? After some analysis, OurGalaxyDAO, as a web3.0 promoter, presents the ArGalaxy. It is time for an awareness-raising campaign for NFT collectors to urge the NFT creators to migrate their NFTs to Arweave.
