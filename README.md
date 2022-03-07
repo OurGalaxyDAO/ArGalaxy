@@ -10,4 +10,5 @@ OurGalaxy is a dream place to create endless possibilities to promote Web3.0 We 
 
 ArGalaxy is expected to be a cash-flow generation business that could further fund OurGalaxy Treasury, and the idea to attract many NFT creators and collections could ideally help promote OurGalaxyDAO. 
 
-# We would make something big! If we receive the grant, voters of this proposal would receive 1% of the rewards we receive from Arweave.
+# We would make something big! If we receive the grant, voters of the snapshot proposal would receive 1% of the rewards we receive from Arweave.
+https://snapshot.org/#/ourgalaxy.eth/proposal/0xeb9b560119cc7d3d739478e88fbeee5310b487102b571f95b1a859659bd6c364
