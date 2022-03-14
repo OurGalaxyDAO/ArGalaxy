@@ -1,14 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
-
+const IPFS = require('ipfs')
+// import * as IPFS from 'ipfs-core'
 function App()  {
-  function getImage(){
+  async function getImage(){
+    let pathTree = []
+
     //  get input from client 
     let uri = document.getElementById("nftUri").value
-    let fronturi = ""//"https://gateway.pinata.cloud/ipfs/"
-    let finaluri = fronturi + uri 
+    const validCID  = uri;
+    
+    // start fetch things with ipfs
+    console.log("start ipfs")
+    const ipfs = await IPFS.create();
+    console.log("started !")
+    console.log(ipfs.ls(validCID))
+    for await (const file of ipfs.ls(validCID)) {
+      console.log(file.path)
+      pathTree.push(file.path)
+    }
+    console.log(pathTree)
+    console.log("finished")
+    // finished fectch path and store all path in pathTree
+    
+    let fronturi = "https://ipfs.io/ipfs/" //QmQ5ZEKtszvy1FLwgTexb5LJJiQ9yZgVLXTbE3fhSiAdJ4
+    let finaluri = fronturi + pathTree[0] 
     const img = document.getElementById("nftImg")
     // set up the source of the img
+    console.log(finaluri)
     img.src = finaluri
     img.style.display = ""
     // check for error
@@ -18,6 +37,9 @@ function App()  {
       img.style.display = "none"
       img.src = 'https://upload.wikimedia.org/wikipedia/commons/a/a5/About.me_icon.jpg';
     });
+
+  
+
    
    
     
