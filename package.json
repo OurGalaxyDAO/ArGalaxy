@@ -1,0 +1,28 @@
+{
+  "name": "web-app",
+  "version": "1.0.0",
+  "description": "We have enough discussions on why NFTs stored in IPFS are unsafe, but Arweave could tackle them with: 1) Permanence; 2) Decentralized unlike most \"centralized\" IPFS pinning services; and 3) No Recurring Fees. But the current situation is, the majority of popular NFT collections are still using IPFS for their storage. Why? After some analysis, OurGalaxyDAO, as a web3.0 promoter, presents the ArGalaxy. It is time for an awareness-raising campaign for NFT collectors to urge the NFT creators to migrate their NFTs to Arweave.",
+  "main": "index.js",
+  "dependencies": {
+    "antd": "^4.19.2",
+    "express": "^4.17.3",
+    "ipfs-core": "^0.14.1",
+    "ipfs": "^0.62.1",
+    "util": "^0.12.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://KkyKristina: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@github.com/OurGalaxyDAO/ArGalaxy-NFT-migration-to-Arweave.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OurGalaxyDAO/ArGalaxy-NFT-migration-to-Arweave/issues"
+  },
+  "homepage": "https://github.com/OurGalaxyDAO/ArGalaxy-NFT-migration-to-Arweave#readme"
+}
