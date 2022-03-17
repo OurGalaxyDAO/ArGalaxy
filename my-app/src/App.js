@@ -5,8 +5,8 @@ import Arweave from 'arweave'
 // const Arweave = require('arweave');
 import {Buffer} from 'buffer';
 // import dotenv from "dotenv";
-require('dotenv').config()
-dotenv.config();
+// require('dotenv').config()
+// dotenv.config();
 Buffer.from('anything','base64');
 const IPFS = require('ipfs')
 // import * as IPFS from 'ipfs-core'
@@ -114,7 +114,25 @@ function App()  {
   
   return (
     <div className="App">
-      <div>
+
+      <div id="Cover">
+        {/* overlay for cover */}
+        <div id="Coverup"></div>
+          <div id="title_container">
+            <h1>NFT Migration <br/>to Arweave</h1>
+            <h3>Presented by ArGalaxy</h3>
+            <h4>Trusted by:&ensp; <span id="title_container_number">21238</span> Users Worldwide <br/>Supported by: &ensp;Arweave</h4>
+            
+          </div>
+          <div id="slogan_container">
+            <h3 id="slogan_container_first">few clicks to   <span id="slogan_container_secure"> Secure Your NFTs</span></h3>
+            <h2>Permanently </h2>
+          </div>
+          <div id="logo"></div>
+
+      </div>
+      
+      <div id="input_container">
         <h2>
           Please input your nft uri
         </h2>
