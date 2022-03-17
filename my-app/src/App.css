@@ -29,6 +29,7 @@
   font-family: "GillSans";
   src: url(./fonts/GIL_____.TTF);
 }
+
 /* hide scrollbar but allow scrolling */
 body {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
@@ -42,7 +43,64 @@ body::-webkit-scrollbar {
 html{
   font-family: "GillSans";
 }
+/* for navigation bar */
+@import '~antd/dist/antd.css';
 
+.site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+  /* background: rgb(23 23 23)   !important; */
+}
+.ant-menu-horizontal{
+  border-bottom:none
+}
+.logo {
+  float: left;
+  width: 150px;
+  /* background: rgb(23 23 23); */
+}
+.ant-row-rtl .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+.ant-menu,.ant-menu-sub,.ant-menu-inline {
+  background: rgb(23 23 23)  !important;
+}
+
+.ant-menu-item{
+    background-color: rgb(23 23 23)  !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    
+}
+
+.ant-menu-item-selected{
+    color: #FFB300 !important;
+    
+
+}
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after{
+  border-bottom: 2px solid #FFB300;
+}
+
+.ant-menu-item-active{
+    color: #FFB300 !important;
+}
+
+.ant-menu,.ant-menu-sub,.ant-menu-inline{
+    color: white !important;
+    background-color:  rgb(23 23 23)  !important;
+}
+
+.companylogo{
+  max-height:100%; 
+  max-width:100%;
+  display: inline;
+}
+
+.ant-layout-header{
+  background: rgb(23 23 23)  !important;
+}
 #Cover{
   background-image: url("./img/gallery.png");
   background-repeat: no-repeat;
@@ -87,7 +145,7 @@ html{
   text-shadow:12px 12px 6px #000000ba;
   margin-bottom: 0;
 }
-#Cover h3{
+#Cover h3, #input_container h3{
   color: white;
   font-size: 3.3vw;
   font-weight: unset;
@@ -108,7 +166,7 @@ html{
   top:100vh;
   position: relative;
 }
-#slogan_container_secure{
+#slogan_container_secure, #input_container h3{
   color: #FF6F00;
   font-size: 3.5vw;
   font-weight: bold;
@@ -138,4 +196,70 @@ html{
   border-radius: 10vw;
   right: 12vw;
   bottom: 40vh;
+}
+#input_container_bg{
+  background: linear-gradient(to bottom, #383234 ,black);
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+}
+.ant-steps{
+  width: 80vw;
+  margin-left: 10vw;
+}
+#input_container h3{
+  text-align: center;
+  margin-bottom: 10vh;
+}
+/* steps css */
+.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+  color: #FAED26;
+  font-family:"GillSans";
+  font-size: 1.5vw;
+  text-shadow: 2px 2px 2px black;
+}
+.ant-steps-item-wait > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title,
+.ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title  {
+  color: white;
+  font-family:"GillSans";
+  font-size: 1.5vw;
+  text-shadow: 2px 2px 2px black;
+}
+.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon {
+  background: #FFB300;
+}
+.ant-steps-item-process .ant-steps-item-icon {
+  border-color: white;
+}
+.ant-steps-item-wait .ant-steps-item-icon {
+  background: black;
+  border-color: white;
+  color: white;
+}
+.ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon {
+  color: rgb(255 255 255);
+}
+.ant-steps-item-finish .ant-steps-item-icon {
+  background-color: rgb(0, 0, 0);
+  border-color: #ffffff;
+}.ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title::after {
+  background-color: #FFB300;
+}.ant-steps-item-title::after {
+  height: 3px;
+}
+.steps-content{
+  width: 80vw;
+  left: 10vw;
+  position: relative;
+  height: 50vh;
+  margin-top: 5vh;
+  background: #ffffffd1;
+  border-radius: 40px;
+}
+.steps_container{
+  width: 70vw;
+  left:5vw;
+  position: relative;
+  top:5vh;
 }
